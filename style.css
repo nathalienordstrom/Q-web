@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    font-family: 'Rochester', cursive;
+    font-size: 100px;
+    background-color: antiquewhite;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+header img {
+    width: 100%;
+}
+
+header h1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+}
+
+.boxText {
+    padding:0 50px 0 50px;
+    font-size: 25px;
+    text-align: center;
+    font-style: oblique;
+    color: rgb(119, 98, 71);
+
+}
+
+.boxOne {
+    margin-top: 50px;
+    /* border: red 2px solid; */
+}
+
+.content {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding:30px;
+}
+
+.content-box {
+    cursor: pointer;
+    text-align: center;
+    /* border: yellow 2px solid; */
+    padding: 50px 0 50px 0;
+    box-shadow: 1px 2px 5px rgb(199, 174, 145);
+}
+.content-box:active {
+    box-shadow: 1px 2px 5px rgb(94, 78, 60);
+    transform: translateY(3px);
+  }
+  
+    
+.content-box h1 {
+    /* border: blue 2px solid; */
+    font-size: 50px;
+    margin: 0;
+    color: rgb(141, 115, 83);
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+    -webkit-background-clip: text;
+       -moz-background-clip: text;
+            background-clip: text; 
+}
+
+
+.content-box h2 {
+    /* border: pink 2px solid; */
+    font-size: 18px;
+    margin: 0;
+    color: rgb(141, 115, 83);
+}
+.content-box a {
+    text-decoration: none;
+    color: rgb(141, 115, 83);
+}
+
+.content-box a {
+    text-decoration: none;
+}
+
+
+.boxTwo {
+
+}
+
+.boxThree {
+
+}
+
+footer {
+margin-top: 50px;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+box-shadow: 1px 1px 5px 2px rgb(199, 174, 145);
+}
+
+footer .info {
+    margin: 40px 10px 50px 10px;
+    padding:0px;
+    /* border: red solid 1px; */
+}
+.info-box {
+    margin-bottom: 30px;
+}
+
+footer .info h1 {
+    font-size: 30px;
+    color: rgb(141, 115, 83);
+}
+footer .info h2 {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(175, 167, 156);
+}
+
+footer .info a {
+    text-decoration: none;
+    color: rgb(155, 134, 105);
+}
+
+  /* mouse over link */
+  footer .info a:hover {
+    text-shadow: 1px 1px 1px  rgb(68, 56, 41);
+  }
+
+  .loggor {
+    /* border: red 1px solid; */
+    display: flex;
+    justify-content: center;
+  }
+
+  .loggor img {
+    height: 30px;
+  }
+
+
+@media (min-width: 250px) and (max-width:700px) {
+    header h1 {
+        font-size: 70px;
+    }
+    
+    footer .info {
+        margin: 10px;
+        padding:20px;
+        /* border: red solid 1px; */
+    }
+    footer .info h1 {
+        font-size: 20px;
+        color: rgb(141, 115, 83);
+    }
+    footer .info h2 {
+        font-size: 19px;
+        text-decoration: none;
+        color: rgb(175, 167, 156);
+    }
+}
+
+@media (min-width: 701px) and (max-width:1024px) {
+    header h1 {
+        font-size: 100px;
+    }
+}
