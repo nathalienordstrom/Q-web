@@ -1,0 +1,397 @@
+body {
+    margin: 0;
+    font-family: 'Rochester', cursive;
+    font-size: 100px;
+    background-color: #E5D8CD;
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/*** HAMBURGER MENY OVERLAY ***/
+.hamburger {
+    color: #E5D8CD;
+   }
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    /* Black fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/opacity */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 10%;
+    /* 10% from the top */
+    width: 100%;
+    /* 100% width */
+    text-align: center;
+    /* Centered text/links */
+    margin-top: 30px;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #eee8e3;
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+    text-shadow: 0 0px 8px #0b0808, 0 0px 8px #ffffff;
+
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 80px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+
+/*** HAMBURGER MENY OVERLAY ***/
+
+
+
+/* https://cdn.pixabay.com/photo/2016/02/19/11/47/flowers-1209948_1280.jpg
+https://cdn.pixabay.com/photo/2015/03/26/10/43/bouquet-691862_1280.jpg */
+.topnav {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    top: 30px;
+    right: 30px;
+    /* border: solid grey 1px; */
+}
+/*Texten  på navbaren*/
+.topnav-pages a {
+    color: #eee8e3;
+    font-weight: bold;
+    margin-top: 20px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    padding: 0px 20px 0px 20px;
+    font-size: 40px;
+    /* text-shadow: 2px 2px 4px #000000; */
+
+}
+
+.topnav-pages a:hover {
+    text-shadow: 0 0px 8px #0b0808, 0 0px 8px #ffffff;
+    border-bottom: inset;
+}
+
+-----------------------------
+
+.background-header {
+    position: relative;
+    width: 100%;
+}
+
+.logga-header {
+    position: absolute;
+    top: 200px;
+    left:40%;
+    width: 350px;
+    
+}
+
+.boxText {
+    padding:50px 50px 50px 50px;
+    font-size: 25px;
+    text-align: center;
+    font-style: oblique;
+    color: #7C6364;
+    background-color: #eee8e3;
+}
+
+.boxOne {
+    margin-top: 50px;
+    /* border: red 2px solid; */
+}
+
+.content {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: auto auto ;
+    justify-content: center;
+    padding:30px;
+    grid-gap: 50px;
+}
+
+.content-box {
+    cursor: pointer;
+    text-align: center;
+    /* border: yellow 2px solid; */
+    width: 400px;
+    height: 250px;
+    box-shadow: 1px 2px 5px #c7ae91;
+    position: relative;
+}
+
+.content-box-image {
+    width: 98%;
+    height: 98%;
+    
+}
+
+.content-box:active {
+    box-shadow: 1px 2px 5px #5e4e3c;
+    transform: translateY(3px);
+  }
+  
+    
+.content-box h1 {
+    /* border: blue 2px solid; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    margin: 0;
+    color: #5e4e3c;
+    text-shadow: 2px 2px 3px rgb(255, 255, 255);
+    -webkit-background-clip: text;
+       -moz-background-clip: text;
+            background-clip: text; 
+}
+
+
+.content-box h2 {
+    /* border: pink 2px solid; */
+    font-size: 18px;
+    margin: 0;
+    color: rgb(141, 115, 83);
+}
+.content-box a {
+    text-decoration: none;
+    color: rgb(141, 115, 83);
+}
+
+.content-box a {
+    text-decoration: none;
+}
+
+
+.boxTwo {
+
+}
+
+.boxThree {
+
+}
+
+footer {
+margin-top: 50px;
+background-color: #7C6364;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+box-shadow: 1px 1px 5px 2px rgb(199, 174, 145);
+}
+
+footer .info {
+    margin: 40px 10px 50px 10px;
+    padding:0px;
+ 
+    /* border: red solid 1px; */
+}
+.info-box {
+    margin-bottom: 30px;
+}
+
+.info .loggor  {
+
+}
+
+footer .info h1 {
+    font-size: 30px;
+    color: rgba(250, 235, 215, 0.826);
+}
+footer .info h2 {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+footer .info a {
+    text-decoration: none;
+    color: rgba(250, 235, 215, 0.826);
+}
+
+  /* mouse over link */
+  footer .info a:hover {
+    text-shadow: 1px 1px 1px  rgb(68, 56, 41);
+  }
+
+  .loggor {
+    /* border: red 1px solid; */
+    display: flex;
+    justify-content:center ;
+  }
+
+  .loggor img {
+    height: 50px;
+    background-color: rgba(250, 235, 215, 0.826);
+    border-radius: 30%;
+  }
+
+
+@media (min-width: 250px) and (max-width:700px) {
+    .logga-header {
+        position: absolute;
+        top: 100px;
+        left:30%;
+        width: 200px;
+    }
+
+    .hamburger {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 40px;
+        color: #d8cebf;
+        text-shadow: 2px 2px 4px #000000;
+        cursor: pointer;
+    }
+
+    .hamburger:hover {
+        color: white;
+        text-shadow: 0 0 15px #FF0000, 0 0 25px #ae00ff;
+    }
+
+    .header {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .topnav {
+        width: 70%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .topnav-pages {
+        display: none;
+    }
+
+    .topnav-name {
+        font-size: 20px;
+        border-radius: 2rem;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-box {
+        cursor: pointer;
+        text-align: center;
+        /* border: yellow 2px solid; */
+        width: 350px;
+        height: 200px;
+        box-shadow: 1px 2px 5px #c7ae91;
+        position: relative;
+    }
+    
+    
+    footer .info {
+        margin: 10px;
+        padding:20px;
+        /* border: red solid 1px; */
+    }
+    footer .info h1 {
+        font-size: 20px;
+    }
+    footer .info h2 {
+        font-size: 19px;
+        text-decoration: none;
+    }
+
+    .loggor img {
+        height: 30px;
+    }
+}
+
+@media (min-width: 447px) and (max-width:1024px) {
+ 
+   
+    .topnav {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: right;
+        top: 0px;
+        right: 30px;
+    
+        /* border: solid grey 1px; */
+    }
+ 
+    .topnav-pages a {
+    color: #eee8e3;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    top: 0px;
+    padding: 0px 10px 0px 0px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+´
+
+.topnav-pages a:hover {
+    text-shadow: 0 0px 8px #0b0808, 0 0px 8px #ffffff;
+    border-bottom: inset;
+}
+   
+    .content {
+        align-items: center;
+
+    }
+    
+}
