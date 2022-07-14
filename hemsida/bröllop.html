@@ -4,9 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="stylesheet" href="bröllop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Norican&family=Quicksand:wght@300;600;700&family=Rochester&family=Yesteryear&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png"  href="favicon.png">
+
+    <title>Bröllop</title>
 </head>
 <body>
-    
+    <header>
+        <img class="background-header" src="assets/bild5.jpeg" />
+        <img class="logga-header" src="assets/LOGO-PNG.png" />
+        <div class="header-rubrik"><h1>BRÖLLOP</h1> </div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Hem</a>
+                <a href="bröllop.html">Bröllop</a>
+                <a href="contact.html">Sorg</a>
+                <a href="gallery.html">Kurser</a>
+                <a href="gallery.html">Företag</a>
+                <a href="gallery.html">Kontakt</a>
+                <a href="gallery.html">Om</a>
+            </div>
+          </div>
+          <span class="hamburger" onclick="openNav()">&#9776; </span>
+          <script>
+            function openNav() {
+              document.getElementById("myNav").style.width = "100%";
+            }
+            function closeNav() {
+              document.getElementById("myNav").style.width = "0%";
+            }
+          </script>
+         
+        <div class="topnav">
+            <div class="topnav-pages">
+              <span class="page">   <a href="index.html">Hem</a></span>
+
+            <a href="Kontakt.html">Kontakt</a>
+            <a href="Om.html">Om</a>
+        </div>
+        </div>
+    </header>
+
+    <footer>
+        <div class="info">
+            <div class="info-box">
+            <h1>Telefon</h1>
+            <h2><a href="tel:+46733835995">073-000 00 00</a></h2>
+        </div>
+        <div class="info-box">
+            <h1>Email</h1>
+            <h2> <a href="mailto:mail@ateljemadeleine.se">mail@qflora.se</a></h2>
+        </div>
+        </div>
+        <div class="info">
+            <h1>Adress</h1>
+            <h2><a
+                    href="https://www.google.se/maps/place/Slättarps+gård/@55.4136141,13.0797504,17z/data=!3m1!4b1!4m5!3m4!1s0x4653737cfd14b393:0x1d13f8f3589fe88b!8m2!3d55.4136111!4d13.0819444">Smalgatan 1 <br>Södra Åby</a></h2>
+        </div>
+        <div class="info">
+            <h1>Sociala medier</h1>
+            <div class="loggor">
+                <a href="https://www.instagram.com/qarrosflora/"><img src="instagram_f_icon-icons.com_65485.png" alt=""></a>
+        </div>
+            </footer>    
 </body>
 </html>
