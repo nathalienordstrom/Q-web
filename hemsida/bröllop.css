@@ -141,8 +141,7 @@ https://cdn.pixabay.com/photo/2015/03/26/10/43/bouquet-691862_1280.jpg */
 
 .background-header {
     position: relative;
-    width: 100%;
-    height: 50%;
+    height: 100px;
 }
 
 .logga-header {
@@ -151,6 +150,43 @@ https://cdn.pixabay.com/photo/2015/03/26/10/43/bouquet-691862_1280.jpg */
     left:3%;
     width: 130px;
     
+}
+
+.boxText {
+    padding:50px 200px 50px 200px;
+    font-size: 25px;
+    text-align: center;
+    font-style: oblique;
+    color: #7C6364;
+    background-color: #eee8e3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.boxTextLine{
+    border:solid 1px #7C6364;
+    width: 300px;
+
+}
+.boxText h5 {
+    color: #907e7f;
+}
+.material-symbols-outlined {
+    padding-left:20px;
+}
+.contactButton {
+    /* border: #7C6364 solid 1px; */
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+}
+.logga-segill {
+width: 150px;
 }
 
 footer {
@@ -177,7 +213,7 @@ footer {
     }
     
     footer .info h1 {
-        font-size: 30px;
+        font-size: 25px;
         color: rgba(250, 235, 215, 0.826);
     }
     footer .info h2 {
@@ -267,6 +303,11 @@ footer {
         position: relative;
     }
     
+
+    .boxText {
+        padding:50px 100px 50px 100px;
+    
+    }
     
     footer .info {
         margin: 10px;
@@ -274,7 +315,7 @@ footer {
         /* border: red solid 1px; */
     }
     footer .info h1 {
-        font-size: 20px;
+        font-size: 30px;
     }
     footer .info h2 {
         font-size: 19px;
@@ -320,11 +361,24 @@ footer {
     text-shadow: 2px 2px 4px #000000;
 }
 
-´
+.boxText {
+    margin-top:50px;
+    padding:50px 50px 50px 50px;
+
+}
+
+
 
 .topnav-pages a:hover {
     text-shadow: 0 0px 8px #0b0808, 0 0px 8px #ffffff;
     border-bottom: inset;
+}
+
+
+.background-header {
+    position: relative;
+    width: 100%;
+    height: 50%;
 }
    
     .content {

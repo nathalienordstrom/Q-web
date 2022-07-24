@@ -150,6 +150,15 @@ https://cdn.pixabay.com/photo/2015/03/26/10/43/bouquet-691862_1280.jpg */
     background-color: #eee8e3;
 }
 
+.boxText h5 {
+    color: #907e7f;
+
+}
+
+.logga-segill {
+width: 150px;
+}
+
 .boxOne {
     margin-top: 50px;
     /* border: red 2px solid; */
