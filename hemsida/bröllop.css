@@ -158,14 +158,12 @@ https://cdn.pixabay.com/photo/2015/03/26/10/43/bouquet-691862_1280.jpg */
     padding:50px 200px 50px 200px;
     font-size: 25px;
     text-align: center;
-    font-style: oblique;
     color: #7C6364;
     background-color: #eee8e3;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: 'Kaisei Opti', serif;
-
 }
 .boxTextLine{
     border:solid 1px #7C6364;
@@ -182,17 +180,17 @@ https://cdn.pixabay.com/photo/2015/03/26/10/43/bouquet-691862_1280.jpg */
 }
 .contactButton {
     font-family: 'Kaisei Opti', serif;
-    margin-top: 20px;
     /* border: #7C6364 solid 1px; */
     font-size: 15px;
+    margin-top: 40px;
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0px 10px 0px 20px;
-    -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
-    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 3px 0px rgba(119, 119, 119, 0.75);
+    border-radius: 10px;
 }
 .logga-segill {
 width: 150px;
