@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    font-family: 'Rochester', cursive;
     font-size: 100px;
     background-color: #E5D8CD;
 }
@@ -14,6 +13,7 @@ header {
 }
 
 .header-rubrik {
+    font-family: 'Rochester', cursive;
     position: absolute;
     top: 10%;
     text-align: center;
@@ -121,6 +121,8 @@ https://cdn.pixabay.com/photo/2015/03/26/10/43/bouquet-691862_1280.jpg */
 }
 /*Texten  på navbaren*/
 .topnav-pages a {
+    font-family: 'Rochester', cursive;
+
     color: #eee8e3;
     font-weight: bold;
     margin-top: 20px;
@@ -162,34 +164,43 @@ https://cdn.pixabay.com/photo/2015/03/26/10/43/bouquet-691862_1280.jpg */
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Kaisei Opti', serif;
+
 }
 .boxTextLine{
     border:solid 1px #7C6364;
     width: 300px;
 
 }
-.boxText h5 {
+.boxText h3 {
     color: #907e7f;
+    font-weight: lighter;
+    font-size: 20px ;
 }
 .material-symbols-outlined {
     padding-left:20px;
 }
 .contactButton {
+    font-family: 'Kaisei Opti', serif;
+    margin-top: 20px;
     /* border: #7C6364 solid 1px; */
-    font-size: 20px;
+    font-size: 15px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 10px 0px 20px;
     -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+    border-radius: 20px;
 }
 .logga-segill {
 width: 150px;
 }
 
 footer {
+    font-family: 'Rochester', cursive;
+
     margin-top: 50px;
     background-color: #7C6364;
     display: flex;
