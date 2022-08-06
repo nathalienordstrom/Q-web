@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-size: 100px;
     background-color: #E5D8CD;
+    box-sizing: border-box;
 }
 
 header {
@@ -10,13 +11,25 @@ header {
     left: 0;
     display: flex;
     flex-direction: column;
-    font-family: 'Rochester', cursive;
+}
 
+.header-rubrik {
+    font-family: 'Rochester', cursive;
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    font-size: 70px;
+    color:#E5D8CD;
+    width: 100%;
+    text-shadow: 4px 4px 4px rgb(8, 7, 7);
+
+    /* background-color:#faebd7d3; */
 }
 
 /*** HAMBURGER MENY OVERLAY ***/
 .hamburger {
     color: #E5D8CD;
+    
    }
 /* The Overlay (background) */
 .overlay {
@@ -41,6 +54,7 @@ header {
 
 /* Position the content inside the overlay */
 .overlay-content {
+    font-family: 'Rochester', cursive;
     position: relative;
     top: 10%;
     /* 10% from the top */
@@ -110,6 +124,8 @@ https://cdn.pixabay.com/photo/2015/03/26/10/43/bouquet-691862_1280.jpg */
 }
 /*Texten  på navbaren*/
 .topnav-pages a {
+    font-family: 'Rochester', cursive;
+
     color: #eee8e3;
     font-weight: bold;
     margin-top: 20px;
@@ -124,196 +140,155 @@ https://cdn.pixabay.com/photo/2015/03/26/10/43/bouquet-691862_1280.jpg */
 
 .topnav-pages a:hover {
     text-shadow: 0 0px 8px #0b0808, 0 0px 8px #ffffff;
-    border-bottom: inset;
 }
 
 -----------------------------
 
 .background-header {
     position: relative;
-    width: 100%;
+    height: 100px;
 }
 
 .logga-header {
     position: absolute;
-    top: 200px;
-    left:40%;
-    width: 350px;
-    
+    top: 40px;
+    left:3%;
+    width: 130px;    
 }
-.boxTextLine{
-    border:solid 1px #7C6364;
-    width: 300px;
-}
-.boxText {
-    padding:50px 50px 50px 50px;
-    font-size: 25px;
-    text-align: center;
-    color: #7C6364;
-    background-color: #eee8e3;
+
+
+.kontakt-box {
+    color:#7C6364;
+    padding:10px 50px 50px 50px;
     font-family: 'Kaisei Opti', serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    border-radius: 5px;
+    margin:100px;
+    background-color: #ede7e1;
 
-.boxText h3 {
-    color: #907e7f;
-    font-size: 20px ;
-}
+    }
 
-.boxText h4 {
-    color: #907e7f;
-    font-size: 20px ;
-}
+    h2 {
+        font-size: 50px;
+        margin: 0;
+    }
 
-.logga-segill {
-width: 150px;
-}
-
-.boxOne {
-    margin-top: 50px;
-    /* border: red 2px solid; */
-}
-
-.content {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: auto auto ;
-    justify-content: center;
-    padding:30px;
-    grid-gap: 50px;
-}
-
-.content-box {
-    font-family: 'Rochester', cursive;
-    cursor: pointer;
-    text-align: center;
-    /* border: yellow 2px solid; */
-    width: 400px;
-    height: 250px;
-    box-shadow: 1px 2px 5px #c7ae91;
-    position: relative;
-}
-
-.content-box-image {
-    width: 98%;
-    height: 98%;
-}
-
-.content-box-image:hover {
-    opacity: 0.6;
-    background-color: #000000;
-  }
-  
-.content-box:active {
-    box-shadow: 1px 2px 5px #5e4e3c;
-    transform: translateY(3px);
-  }
-  
+    .boxTextLine{
+        border:solid 0.5px #7C6364;
+        width: 300px;
     
-.content-box h1 {
-    /* border: blue 2px solid; */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 50px;
-    margin: 0;
-    color: #f6f6f6;
-    text-shadow: 2px 2px 3px rgb(8, 7, 7);
-    -webkit-background-clip: text;
-       -moz-background-clip: text;
-            background-clip: text; 
+    }
+
+.rubrik {
+    font-size: 20px;
+    margin: 20px 0 0 0;
 }
 
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 10px;
+    resize: vertical;
+    background-color: #ede7e1;
+    font-family: 'Kaisei Opti', serif;
+    color:#7C6364;
+    font-size: 10px;
 
-.content-box h2 {
-    /* border: pink 2px solid; */
-    font-size: 18px;
-    margin: 0;
-    color: rgb(141, 115, 83);
+  }
+
+  .material-symbols-outlined {
+    padding-left:20px;
 }
-.content-box a {
+.contactButton {
+    font-family: 'Kaisei Opti', serif;
+    /* border: #7C6364 solid 1px; */
+    font-size: 15px;
+    color:#7C6364;
+    margin-top: 40px;
+    background-color: #ede7e1;
     text-decoration: none;
-    color: rgb(141, 115, 83);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 10px 5px 20px;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 3px 0px rgba(119, 119, 119, 0.75);
+    border-radius: 10px;
+    cursor: pointer;
 }
 
-.content-box a {
-    text-decoration: none;
-}
+.contactButton:active  {
+    border: inset ;
+
+  }
 
 
-.boxTwo {
+  
 
-}
-
-.boxThree {
-
-}
 
 footer {
     font-family: 'Rochester', cursive;
-margin-top: 50px;
-background-color: #7C6364;
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-box-shadow: 1px 1px 5px 2px rgb(199, 174, 145);
-}
-
-footer .info {
-    margin: 40px 10px 50px 10px;
-    padding:0px;
- 
-    /* border: red solid 1px; */
-}
-.info-box {
-    margin-bottom: 30px;
-}
-
-.info .loggor  {
-
-}
-
-footer .info h1 {
-    font-size: 30px;
-    color: rgba(250, 235, 215, 0.826);
-}
-footer .info h2 {
-    font-size: 20px;
-    text-decoration: none;
-}
-
-footer .info a {
-    text-decoration: none;
-    color: rgba(250, 235, 215, 0.826);
-}
-
-  /* mouse over link */
-  footer .info a:hover {
-    text-shadow: 1px 1px 1px  rgb(68, 56, 41);
-  }
-
-  .loggor {
-    /* border: red 1px solid; */
+    margin-top: 50px;
+    background-color: #7C6364;
     display: flex;
-    justify-content:center ;
-  }
+    flex-direction: row;
+    justify-content: space-around;
+    box-shadow: 1px 1px 5px 2px rgb(199, 174, 145);
+    }
+    
+    footer .info {
+        margin: 40px 10px 50px 10px;
+        padding:0px;
+     
+        /* border: red solid 1px; */
+    }
+    .info-box {
+        margin-bottom: 30px;
+    }
+    
+    .info .loggor  {
+    
+    }
+    
+    footer .info h1 {
+        font-size: 25px;
+        color: rgba(250, 235, 215, 0.826);
+    }
+    footer .info h2 {
+        font-size: 20px;
+        text-decoration: none;
+    }
+    
+    footer .info a {
+        text-decoration: none;
+        color: rgba(250, 235, 215, 0.826);
+    }
+    
+      /* mouse over link */
+      footer .info a:hover {
+        text-shadow: 1px 1px 1px  rgb(68, 56, 41);
+      }
+    
+      .loggor {
+        /* border: red 1px solid; */
+        display: flex;
+        justify-content:center ;
+      }
+    
+      .loggor img {
+        height: 50px;
+        background-color: #faebd7d3;
+        border-radius: 30%;
+      }
+    
 
-  .loggor img {
-    height: 50px;
-    background-color: rgba(250, 235, 215, 0.826);
-    border-radius: 30%;
-  }
 
 
 @media (min-width: 250px) and (max-width:700px) {
     .logga-header {
         position: absolute;
-        top: 100px;
-        left:30%;
-        width: 200px;
+        top: 10px;
+        left:2%;
+        width: 100px;
     }
 
     .hamburger {
@@ -350,21 +325,6 @@ footer .info a {
         font-size: 20px;
         border-radius: 2rem;
     }
-    .content {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .content-box {
-        cursor: pointer;
-        text-align: center;
-        /* border: yellow 2px solid; */
-        width: 350px;
-        height: 200px;
-        box-shadow: 1px 2px 5px #c7ae91;
-        position: relative;
-    }
-    
     
     footer .info {
         margin: 10px;
@@ -372,7 +332,7 @@ footer .info a {
         /* border: red solid 1px; */
     }
     footer .info h1 {
-        font-size: 20px;
+        font-size: 30px;
     }
     footer .info h2 {
         font-size: 19px;
@@ -385,7 +345,16 @@ footer .info a {
 }
 
 @media (min-width: 447px) and (max-width:1024px) {
- 
+    .header-rubrik {
+        position: absolute;
+        top: 30%;
+        text-align: center;
+        font-size: 40px;
+        color:#E5D8CD;
+        width: 100%;
+        text-shadow: 4px 4px 4px rgb(8, 7, 7);
+
+    }
    
     .topnav {
         position: absolute;
@@ -409,27 +378,25 @@ footer .info a {
     text-shadow: 2px 2px 4px #000000;
 }
 
-´
+.boxText {
+    margin-top:50px;
+    padding:50px 50px 50px 50px;
+
+}
+
+
 
 .topnav-pages a:hover {
     text-shadow: 0 0px 8px #0b0808, 0 0px 8px #ffffff;
     border-bottom: inset;
 }
 
-.boxText {
-    font-size: 20px;
-}
-.boxText h3 {
-    color: #907e7f;
-    font-size: 15px ;
-}
 
-.boxText h4 {
-    color: #907e7f;
-    font-size: 15px ;
+.background-header {
+    position: relative;
+    width: 100%;
+    height: 50%;
 }
-
-
    
     .content {
         align-items: center;

@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link rel="stylesheet" href="bröllop.css">
+    <link rel="stylesheet" href="kontakt.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Norican&family=Quicksand:wght@300;600;700&family=Rochester&family=Yesteryear&display=swap" rel="stylesheet">
@@ -14,12 +15,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&family=Norican&family=Rochester&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png"  href="favicon.png">
-  
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -30,7 +30,7 @@
     <header>
         <img class="background-header" src="assets/bild5.jpeg" />
         <img class="logga-header" src="assets/LOGO-PNG.png" />
-        <div class="header-rubrik"><h1>BRÖLLOP</h1> </div>
+        <div class="header-rubrik"><h1>Kontakt</h1> </div>
         <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
@@ -62,24 +62,34 @@
         </div>
         </div>
     </header>
-    <div class="boxText">
-      <h2>Bröllop</h2> 
-  <div class="boxTextLine"></div>
-       <h3>   En av era mest vackra  stunder känslomässigt närmar sig. Låt mig få tolka er som par, era färgpaletter och visioner.
-         Blommorna på er speciella dag, kommer att spegla er och göra dagen ännu mer vacker för ögat. 
-        </h3>
-        <a href="kontakt.html">
-        <div class="contactButton">
-          <p>Kontakt</p>
-        </a>
-           <span class="material-symbols-outlined">
-chevron_right
-</span>
-            </span>
-        </div>
+    <div class="kontakt-box">
+<h2>Kontakt</h2>
+<div class="boxTextLine"></div>
+    <form action="https://formsubmit.co/nathalie-nordstrom@hotmail.com" method="POST">
+        <div class="rubrik">Namn</div>
+        <input type="text" name="name" placeholder="Förnamn & efternamn"required>
+        <div class="rubrik">Email</div>
+        <input type="text" name="email" placeholder="Email Adress" required>
 
-             <!-- <img class="logga-segill" src="assets/LOGO-PNG.png" /> -->
-     </div>
+       
+        <div class="rubrik">Ämne</div>
+        <select id="ämne" name="ämne">
+            <option value="Bröllop">Bröllop</option>
+            <option value="Sorg">Sorg</option>
+            <option value="Företag">Företag</option>
+            <option value="Kurser">Kurser</option>
+            <option value="Övrigt">Övrigt</option>
+          </select>
+
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <button class="contactButton" type="submit">Skicka<span class="material-symbols-outlined">
+            chevron_right
+            </span></button>
+               
+    </form>
+</div>
+
+
     <footer>
         <div class="info">
             <div class="info-box">

@@ -52,6 +52,7 @@ header {
 
 /* Position the content inside the overlay */
 .overlay-content {
+    font-family: 'Rochester', cursive;
     position: relative;
     top: 10%;
     /* 10% from the top */
@@ -183,6 +184,7 @@ https://cdn.pixabay.com/photo/2015/03/26/10/43/bouquet-691862_1280.jpg */
     /* border: #7C6364 solid 1px; */
     font-size: 15px;
     margin-top: 40px;
+    text-decoration: none;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -191,7 +193,19 @@ https://cdn.pixabay.com/photo/2015/03/26/10/43/bouquet-691862_1280.jpg */
     -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 3px 0px rgba(119, 119, 119, 0.75);
     border-radius: 10px;
+    cursor: pointer;
 }
+
+a  {
+    text-decoration: none;
+    color:#7C6364;
+  }
+
+.contactButton:active  {
+    border: inset ;
+
+  }
+
 .logga-segill {
 width: 150px;
 }
