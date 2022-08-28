@@ -159,6 +159,45 @@ https://cdn.pixabay.com/photo/2015/03/26/10/43/bouquet-691862_1280.jpg */
 
 .boxText h3 {
     color: #907e7f;
+    font-weight: lighter;
+    font-size: 20px ;
+}
+.material-symbols-outlined {
+    padding-left:5px;
+}
+.contactButton {
+    font-family: 'Kaisei Opti', serif;
+    /* border: #7C6364 solid 1px; */
+    font-size: 7px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 5px 0px 15px;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 3px 0px rgba(119, 119, 119, 0.75);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.contactButton h1 {
+    margin: 10px 5px 10px 1px;
+}
+
+a  {
+    text-decoration: none;
+    color:#7C6364;
+  }
+
+.contactButton:active  {
+    border: inset ;
+
+  }
+
+.boxText h3 {
+    color: #907e7f;
     font-size: 20px ;
 }
 
@@ -179,7 +218,7 @@ width: 150px;
 .content {
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: auto auto ;
+    grid-template-columns: auto auto auto auto  ;
     justify-content: center;
     padding:30px;
     grid-gap: 50px;
@@ -191,7 +230,7 @@ width: 150px;
     text-align: center;
     /* border: yellow 2px solid; */
     width: 400px;
-    height: 250px;
+    height: 300px;
     box-shadow: 1px 2px 5px #c7ae91;
     position: relative;
 }
@@ -359,12 +398,14 @@ footer .info a {
         cursor: pointer;
         text-align: center;
         /* border: yellow 2px solid; */
-        width: 350px;
+        width: 300px;
         height: 200px;
         box-shadow: 1px 2px 5px #c7ae91;
         position: relative;
     }
-    
+    .content {
+        grid-gap: 20px;
+    }
     
     footer .info {
         margin: 10px;

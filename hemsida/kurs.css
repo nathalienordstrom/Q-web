@@ -1,0 +1,430 @@
+body {
+    margin: 0;
+    font-size: 100px;
+    background-color: #E5D8CD;
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-rubrik {
+    font-family: 'Rochester', cursive;
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    font-size: 70px;
+    color:#E5D8CD;
+    width: 100%;
+    text-shadow: 4px 4px 4px rgb(8, 7, 7);
+
+    /* background-color:#faebd7d3; */
+}
+
+/*** HAMBURGER MENY OVERLAY ***/
+.hamburger {
+    color: #E5D8CD;
+   }
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    /* Black fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/opacity */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    font-family: 'Rochester', cursive;
+    position: relative;
+    top: 10%;
+    /* 10% from the top */
+    width: 100%;
+    /* 100% width */
+    text-align: center;
+    /* Centered text/links */
+    margin-top: 30px;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #eee8e3;
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+    text-shadow: 0 0px 8px #0b0808, 0 0px 8px #ffffff;
+
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 80px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+
+/*** HAMBURGER MENY OVERLAY ***/
+
+
+
+/* https://cdn.pixabay.com/photo/2016/02/19/11/47/flowers-1209948_1280.jpg
+https://cdn.pixabay.com/photo/2015/03/26/10/43/bouquet-691862_1280.jpg */
+.topnav {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    top: 30px;
+    right: 30px;
+    /* border: solid grey 1px; */
+}
+/*Texten  på navbaren*/
+.topnav-pages a {
+    font-family: 'Rochester', cursive;
+
+    color: #eee8e3;
+    font-weight: bold;
+    margin-top: 20px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    padding: 0px 20px 0px 20px;
+    font-size: 40px;
+    /* text-shadow: 2px 2px 4px #000000; */
+
+}
+
+.topnav-pages a:hover {
+    text-shadow: 0 0px 8px #0b0808, 0 0px 8px #ffffff;
+}
+
+-----------------------------
+
+.background-header {
+    position: relative;
+    height: 100px;
+}
+
+.logga-header {
+    position: absolute;
+    top: 40px;
+    left:3%;
+    width: 130px;
+    
+}
+
+.boxText {
+    padding:50px 200px 50px 200px;
+    font-size: 25px;
+    text-align: center;
+    color: #7C6364;
+    background-color: #eee8e3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Kaisei Opti', serif;
+}
+.boxTextLine{
+    border:solid 1px #7C6364;
+    width: 300px;
+
+}
+
+.boxText h3 {
+    color: #907e7f;
+    font-weight: lighter;
+    font-size: 20px ;
+}
+.material-symbols-outlined {
+    padding-left:5px;
+}
+.contactButton {
+    font-family: 'Kaisei Opti', serif;
+    /* border: #7C6364 solid 1px; */
+    font-size: 7px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 5px 0px 15px;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 3px 0px rgba(119, 119, 119, 0.75);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.contactButton h1 {
+    margin: 10px 5px 10px 1px;
+}
+
+a  {
+    text-decoration: none;
+    color:#7C6364;
+  }
+
+
+.logga-segill {
+width: 150px;
+}
+
+footer {
+    font-family: 'Rochester', cursive;
+
+    margin-top: 50px;
+    background-color: #7C6364;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-shadow: 1px 1px 5px 2px rgb(199, 174, 145);
+    }
+    
+    footer .info {
+        margin: 40px 10px 50px 10px;
+        padding:0px;
+     
+        /* border: red solid 1px; */
+    }
+    .info-box {
+        margin-bottom: 30px;
+    }
+    
+    .info .loggor  {
+    
+    }
+    
+    footer .info h1 {
+        font-size: 25px;
+        color: rgba(250, 235, 215, 0.826);
+    }
+    footer .info h2 {
+        font-size: 20px;
+        text-decoration: none;
+    }
+    
+    footer .info a {
+        text-decoration: none;
+        color: rgba(250, 235, 215, 0.826);
+    }
+    
+      /* mouse over link */
+      footer .info a:hover {
+        text-shadow: 1px 1px 1px  rgb(68, 56, 41);
+      }
+    
+      .loggor {
+        /* border: red 1px solid; */
+        display: flex;
+        justify-content:center ;
+      }
+    
+      .loggor img {
+        height: 50px;
+        background-color: #faebd7d3;
+        border-radius: 30%;
+      }
+    
+
+
+
+@media (min-width: 250px) and (max-width:700px) {
+    .logga-header {
+        position: absolute;
+        top: 10px;
+        left:2%;
+        width: 100px;
+    }
+
+    .header-rubrik {
+        font-family: 'Rochester', cursive;
+        position: absolute;
+        top: 10%;
+        text-align: center;
+        font-size: 0px;
+        color:#E5D8CD;
+        width: 100%;
+        text-shadow: 4px 4px 4px rgb(8, 7, 7);
+    
+        /* background-color:#faebd7d3; */
+    }
+    .background-header {
+        position: relative;
+        height: 100px;
+    }
+    .hamburger {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 40px;
+        color: #d8cebf;
+        text-shadow: 2px 2px 4px #000000;
+        cursor: pointer;
+    }
+
+    .hamburger:hover {
+        color: white;
+        text-shadow: 0 0 15px white;
+    }
+
+    .header {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .topnav {
+        width: 70%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .topnav-pages {
+        display: none;
+    }
+
+    .topnav-name {
+        font-size: 20px;
+        border-radius: 2rem;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-box {
+        cursor: pointer;
+        text-align: center;
+        /* border: yellow 2px solid; */
+        width: 350px;
+        height: 200px;
+        box-shadow: 1px 2px 5px #c7ae91;
+        position: relative;
+    }
+    
+
+    .boxText {
+        padding:50px 100px 50px 100px;
+    
+    }
+    
+    footer .info {
+        margin: 10px;
+        padding:20px;
+        /* border: red solid 1px; */
+    }
+    footer .info h1 {
+        font-size: 30px;
+    }
+    footer .info h2 {
+        font-size: 19px;
+        text-decoration: none;
+    }
+
+    .loggor img {
+        height: 30px;
+    }
+}
+
+@media (min-width: 447px) and (max-width:1024px) {
+    .header-rubrik {
+        position: absolute;
+        top: 30%;
+        text-align: center;
+        font-size: 0px;
+        color:#E5D8CD;
+        width: 100%;
+        text-shadow: 4px 4px 4px rgb(8, 7, 7);
+
+    }
+    
+
+    .topnav {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: right;
+        top: 0px;
+        right: 30px;
+    
+        /* border: solid grey 1px; */
+    }
+ 
+    .topnav-pages a {
+    color: #eee8e3;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    top: 0px;
+    padding: 0px 10px 0px 0px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.boxText {
+    margin-top:50px;
+    padding:50px 50px 50px 50px;
+
+}
+
+
+
+.topnav-pages a:hover {
+    text-shadow: 0 0px 8px #0b0808, 0 0px 8px #ffffff;
+    border-bottom: inset;
+}
+
+
+.background-header {
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+   
+    .content {
+        align-items: center;
+
+    }
+    
+}
