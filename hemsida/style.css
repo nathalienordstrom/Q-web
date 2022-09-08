@@ -14,16 +14,24 @@ header {
 
 }
 
+.logga-header {
+    position: absolute;
+    top: 200px;
+    left:35%;
+    width: 400px;
+}
+
+
 .header-rubrik {
-    font-family: 'Kaisei Opti', serif;
+    /* font-family: 'Kaisei Opti', serif;
     position: absolute;
     top: 10%;
     text-align: center;
     font-size: 50px;
     color:white;
     width: 100%;
-    text-shadow: 4px 4px 4px rgb(8, 7, 7);
-
+    text-shadow: 4px 4px 4px rgb(8, 7, 7); */
+display: none;
     /* background-color:#faebd7d3; */
 }
 
@@ -171,6 +179,7 @@ https://cdn.pixabay.com/photo/2015/03/26/10/43/bouquet-691862_1280.jpg */
     justify-content: right;
     top: 30px;
     right: 30px;
+    
     /* border: solid grey 1px; */
 }
 /*Texten  på navbaren*/
@@ -201,12 +210,6 @@ https://cdn.pixabay.com/photo/2015/03/26/10/43/bouquet-691862_1280.jpg */
     height: 100px;
 }
 
-.logga-header {
-    position: absolute;
-    top: 40px;
-    left:3%;
-    width: 130px;    
-}
 
 .boxTextLine{
     border:solid 1px #7C6364;
@@ -494,7 +497,7 @@ footer .info a {
     }
 }
 
-@media (min-width: 447px) and (max-width:1024px) {
+@media (min-width: 700px) and (max-width:1024px) {
     .header-rubrik {
         font-family: 'Kaisei Opti', serif;
         position: absolute;
@@ -506,6 +509,12 @@ footer .info a {
         text-shadow: 4px 4px 4px rgb(8, 7, 7);
     
         /* background-color:#faebd7d3; */
+    }
+    .logga-header {
+        position: absolute;
+        top: 100px;
+        left:30%;
+        width: 300px;
     }
    
     .topnav {
