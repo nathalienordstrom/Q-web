@@ -464,6 +464,7 @@ footer .info a {
     .content {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .content-box {
@@ -477,6 +478,7 @@ footer .info a {
     }
     .content {
         grid-gap: 20px;
+        
     }
     
     footer .info {
