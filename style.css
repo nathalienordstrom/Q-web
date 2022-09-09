@@ -210,10 +210,11 @@ https://cdn.pixabay.com/photo/2015/03/26/10/43/bouquet-691862_1280.jpg */
 -----------------------------
 
 
-.boxTextLine{
-    border:solid 1px #7C6364;
+.boxText .boxTextLine{
+    border:solid 9px #7C6364;
     width: 300px;
 }
+
 .boxText {
     padding:50px 50px 50px 50px;
     font-size: 25px;
@@ -224,6 +225,8 @@ https://cdn.pixabay.com/photo/2015/03/26/10/43/bouquet-691862_1280.jpg */
     display: flex;
     flex-direction: column;
     align-items: center;
+    border:solid 9px #7C6364;
+
 }
 
 .boxText h3 {
@@ -260,6 +263,10 @@ a  {
     color:#7C6364;
   }
 
+  .boxText h2 {
+    color: #907e7f;
+    font-size: 40px ;
+}
 
 .boxText h3 {
     color: #907e7f;
@@ -468,6 +475,11 @@ footer .info a {
         align-items: center;
     }
 
+    .boxText h2 {
+        color: #907e7f;
+        font-size: 30px ;
+    }
+
     .content-box {
         cursor: pointer;
         text-align: center;
@@ -481,12 +493,15 @@ footer .info a {
         grid-gap: 20px;
         
     }
-    
+    footer {
+        padding: 5px 20px 30px 20px;
+       text-align: center;
+        }
+        
     footer .info {
-        margin: 10px;
-        padding:20px;
-        /* border: red solid 1px; */
+        margin:10px;
     }
+
     footer .info h1 {
         font-size: 18px;
     }
