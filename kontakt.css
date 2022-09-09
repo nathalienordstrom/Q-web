@@ -17,7 +17,7 @@ header {
     position: absolute;
     top: 20%;
     text-align: center;
-    font-size: 50px;
+    font-size: 20px;
     color:#E5D8CD;
     width: 100%;
     text-shadow: 4px 4px 4px rgb(8, 7, 7);
@@ -53,7 +53,7 @@ header {
 
 /* Position the content inside the overlay */
 .overlay-content {
-    font-family: 'Rochester', cursive;
+    font-family: 'Kaisei Opti', serif;
     position: relative;
     top: 10%;
     /* 10% from the top */
@@ -69,7 +69,7 @@ header {
 .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 30px;
     color: #eee8e3;
     display: block;
     /* Display block instead of inline */
@@ -287,6 +287,9 @@ footer {
         top: 10px;
         left:2%;
         width: 100px;
+    }
+    .header-rubrik {
+        font-size: 0px;
     }
 
     .hamburger {
