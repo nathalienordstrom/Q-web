@@ -14,6 +14,10 @@ header {
 
 }
 
+.background-header {
+    height: 800px
+}
+
 .logga-header {
     position: absolute;
     top: 200px;
@@ -204,12 +208,6 @@ https://cdn.pixabay.com/photo/2015/03/26/10/43/bouquet-691862_1280.jpg */
 }
 
 -----------------------------
-
-.background-header {
-    position: relative;
-    height: 100px;
-    
-}
 
 
 .boxTextLine{
@@ -421,7 +419,9 @@ footer .info a {
         left:30%;
         width: 200px;
     }
-
+    .background-header {
+        height: 500px;
+    }
     .header-rubrik {
         display: none
     
